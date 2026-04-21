@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkBox" id="backup_box">
+    <property name="can-focus">0</property>
+    <property name="orientation">vertical</property>
+    <property name="halign">center</property>
+    <child>
+      <object class="GtkLabel">
+        <property name="can-focus">0</property>
+        <property name="margin-bottom">6</property>
+        <property name="label" translatable="yes">OpenPGP Key Backup</property>
+        <style>
+          <class name="title-1"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="wrap">1</property>
+        <property name="max-width-chars">50</property>
+        <property name="label" translatable="yes">Key was removed</property>
+        <style>
+          <class name="dimmed" />
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="can-focus">0</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">6</property>
+        <property name="margin-top">18</property>
+        <child>
+          <object class="GtkBox">
+            <property name="can-focus">0</property>
+            <property name="spacing">12</property>
+            <property name="halign">center</property>
+            <style>
+              <class name="mb-12" />
+              <class name="p-18" />
+              <class name="card" />
+            </style>
+            <child>
+              <object class="GtkLabel">
+                <property name="can-focus">0</property>
+                <property name="wrap">1</property>
+                <property name="label">Backup your Key</property>
+                <style>
+                  <class name="title-4"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
